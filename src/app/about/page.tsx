@@ -39,7 +39,7 @@ export default function AboutPage() {
           
           <section>
             <h2 className="text-3xl font-serif font-bold text-text mb-4">
-              Why "60 Watts of Clarity"?
+              Why &ldquo;60 Watts of Clarity&rdquo;?
             </h2>
             <p className="text-muted">
               Content coming soon.

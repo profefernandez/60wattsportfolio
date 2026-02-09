@@ -1,21 +1,22 @@
 import type { Metadata } from 'next'
-import { notFound } from 'next/navigation'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params
   return {
-    title: `Blog Post: ${params.slug}`,
+    title: `Blog Post: ${slug}`,
   }
 }
 
-export default function BlogPostPage({ params }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // In a real app, you would fetch the blog post data here
   // For now, just show a placeholder
+  const { slug } = await params
 
   return (
     <div className="container-padding mx-auto section-spacing">
@@ -23,7 +24,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <article>
           <header className="mb-12">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
-              Blog Post: {params.slug}
+              Blog Post: {slug}
             </h1>
             <p className="text-muted">
               Content coming soon.
@@ -31,7 +32,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </header>
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-muted">
-              This is a placeholder for the blog post with slug: <code className="text-primary">{params.slug}</code>
+              This is a placeholder for the blog post with slug: <code className="text-primary">{slug}</code>
             </p>
           </div>
         </article>

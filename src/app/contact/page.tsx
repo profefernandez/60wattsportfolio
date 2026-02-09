@@ -16,7 +16,7 @@ export default function ContactPage() {
             Get in Touch
           </h1>
           <p className="text-xl text-muted">
-            Content coming soon. We'd love to hear from you.
+            Content coming soon. We&apos;d love to hear from you.
           </p>
         </div>
 

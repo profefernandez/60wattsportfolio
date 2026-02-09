@@ -45,7 +45,7 @@ export default function Nav() {
                 </Link>
                 {/* Dropdown menu */}
                 <div className="absolute left-0 mt-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all duration-200 bg-surface border border-muted rounded-md shadow-lg overflow-hidden">
-                  {item.children.map((child) => (
+                  {item.children?.map((child) => (
                     <Link
                       key={child.href}
                       href={child.href}
@@ -134,7 +134,7 @@ export default function Nav() {
                     </Link>
                     {hasChildren && (
                       <div className="ml-4 mt-1 space-y-1">
-                        {item.children.map((child) => (
+                        {item.children?.map((child) => (
                           <Link
                             key={child.href}
                             href={child.href}

@@ -1,8 +1,10 @@
 import { HTMLAttributes, forwardRef } from 'react'
+import { Slot } from '@radix-ui/react-slot'
 import { cn } from '@/lib/utils'
 
 export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   hover?: boolean
+  asChild?: boolean
 }
 
 /**
@@ -10,9 +12,11 @@ export interface CardProps extends HTMLAttributes<HTMLDivElement> {
  * Optional hover effect with amber glow
  */
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ className, hover = false, children, ...props }, ref) => {
+  ({ className, hover = false, asChild = false, children, ...props }, ref) => {
+    const Comp = asChild ? Slot : 'div'
+
     return (
-      <div
+      <Comp
         ref={ref}
         className={cn(
           'rounded-lg bg-surface border border-muted p-6',
@@ -22,7 +26,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         {...props}
       >
         {children}
-      </div>
+      </Comp>
     )
   }
 )

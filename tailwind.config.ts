@@ -18,8 +18,8 @@ const config: Config = {
         muted: '#6B6560',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-fraunces)', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Fraunces', 'Georgia', 'serif'],
       },
       boxShadow: {
         'glow': '0 0 20px rgba(245, 166, 35, 0.3)',
