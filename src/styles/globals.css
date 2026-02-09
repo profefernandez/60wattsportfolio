@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #1A1A1A;
+  --color-surface: #2A2725;
+  --color-primary: #F5A623;
+  --color-accent: #C75B39;
+  --color-text: #EDE8E2;
+  --color-muted: #6B6560;
+}
+
+@layer base {
+  * {
+    @apply border-muted;
+  }
+  
+  body {
+    @apply bg-background text-text font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* WCAG AAA Focus Styles - High Contrast Focus Indicators */
+  *:focus-visible {
+    @apply outline-none ring-4 ring-primary ring-offset-4 ring-offset-background;
+  }
+  
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+  
+  /* Screen reader only utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Typography styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  h5 {
+    @apply text-lg md:text-xl;
+  }
+  
+  h6 {
+    @apply text-base md:text-lg;
+  }
+  
+  /* Link styles with WCAG AAA contrast */
+  a {
+    @apply text-primary underline-offset-4 transition-colors;
+  }
+  
+  a:hover {
+    @apply underline;
+  }
+  
+  /* High contrast for better accessibility */
+  ::selection {
+    @apply bg-primary text-background;
+  }
+}
+
+@layer components {
+  /* Warm amber glow effect for hover states */
+  .glow-hover {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .glow-hover:hover {
+    box-shadow: 0 0 20px rgba(245, 166, 35, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .glow-hover {
+      transition: none;
+    }
+    
+    .glow-hover:hover {
+      transform: none;
+    }
+  }
+  
+  /* Text glow effect */
+  .text-glow {
+    text-shadow: 0 0 10px rgba(245, 166, 35, 0.5);
+  }
+}
+
+@layer utilities {
+  /* Container utilities */
+  .container-padding {
+    @apply px-4 md:px-6 lg:px-8;
+  }
+  
+  .section-spacing {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+}
