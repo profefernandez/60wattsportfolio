@@ -12,11 +12,7 @@ export default function PricingPage() {
       name: 'Starter',
       price: 'Contact',
       description: 'Perfect for getting started',
-      features: [
-        'Feature placeholder 1',
-        'Feature placeholder 2',
-        'Feature placeholder 3',
-      ],
+      features: ['Feature placeholder 1', 'Feature placeholder 2', 'Feature placeholder 3'],
       cta: 'Get Started',
       highlighted: false,
     },

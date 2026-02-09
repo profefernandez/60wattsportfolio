@@ -13,37 +13,27 @@ export default function AboutPage() {
         <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-8">
           About 60 Watts of Clarity
         </h1>
-        
+
         <div className="prose prose-invert prose-lg max-w-none">
-          <p className="text-xl text-muted mb-8">
-            Content coming soon.
-          </p>
-          
+          <p className="text-xl text-muted mb-8">Content coming soon.</p>
+
           <section className="mb-12">
-            <h2 className="text-3xl font-serif font-bold text-text mb-4">
-              Our Mission
-            </h2>
-            <p className="text-muted">
-              Content coming soon.
-            </p>
+            <h2 className="text-3xl font-serif font-bold text-text mb-4">Our Mission</h2>
+            <p className="text-muted">Content coming soon.</p>
           </section>
-          
+
           <section className="mb-12">
-            <h2 className="text-3xl font-serif font-bold text-text mb-4">
-              About the Founder
-            </h2>
+            <h2 className="text-3xl font-serif font-bold text-text mb-4">About the Founder</h2>
             <p className="text-muted">
               Founded by {SITE_AUTHOR}, Psychology Professor. Content coming soon.
             </p>
           </section>
-          
+
           <section>
             <h2 className="text-3xl font-serif font-bold text-text mb-4">
               Why &ldquo;60 Watts of Clarity&rdquo;?
             </h2>
-            <p className="text-muted">
-              Content coming soon.
-            </p>
+            <p className="text-muted">Content coming soon.</p>
           </section>
         </div>
       </div>

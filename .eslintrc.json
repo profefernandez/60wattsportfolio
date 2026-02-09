@@ -1,6 +1,22 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "next/typescript"
-  ]
+    "next/typescript",
+    "plugin:jsx-a11y/strict",
+    "plugin:security/recommended-legacy",
+    "prettier"
+  ],
+  "plugins": ["jsx-a11y", "security", "prettier"],
+  "rules": {
+    "@next/next/no-page-custom-font": "off",
+    "prettier/prettier": "warn",
+    "jsx-a11y/anchor-is-valid": "error",
+    "jsx-a11y/alt-text": "error",
+    "jsx-a11y/aria-props": "error",
+    "jsx-a11y/aria-role": "error",
+    "jsx-a11y/heading-has-content": "error",
+    "jsx-a11y/label-has-associated-control": "error",
+    "jsx-a11y/no-autofocus": "error",
+    "jsx-a11y/no-redundant-roles": "error"
+  }
 }

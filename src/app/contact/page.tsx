@@ -12,9 +12,7 @@ export default function ContactPage() {
     <div className="container-padding mx-auto section-spacing">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
-            Get in Touch
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">Get in Touch</h1>
           <p className="text-xl text-muted">
             Content coming soon. We&apos;d love to hear from you.
           </p>
@@ -23,10 +21,7 @@ export default function ContactPage() {
         <Card className="p-8">
           <form className="space-y-6">
             <div>
-              <label 
-                htmlFor="name" 
-                className="block text-sm font-medium text-text mb-2"
-              >
+              <label htmlFor="name" className="block text-sm font-medium text-text mb-2">
                 Name
               </label>
               <input
@@ -39,10 +34,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label 
-                htmlFor="email" 
-                className="block text-sm font-medium text-text mb-2"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-text mb-2">
                 Email
               </label>
               <input
@@ -55,10 +47,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label 
-                htmlFor="message" 
-                className="block text-sm font-medium text-text mb-2"
-              >
+              <label htmlFor="message" className="block text-sm font-medium text-text mb-2">
                 Message
               </label>
               <textarea

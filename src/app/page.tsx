@@ -15,12 +15,10 @@ export default function HomePage() {
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-text mb-6 text-glow">
           {SITE_NAME}
         </h1>
-        <p className="text-xl md:text-2xl text-primary mb-4 font-medium">
-          {SITE_TAGLINE}
-        </p>
+        <p className="text-xl md:text-2xl text-primary mb-4 font-medium">{SITE_TAGLINE}</p>
         <p className="text-lg text-muted mb-12 max-w-2xl mx-auto">
-          The first social work human-centered AI practice. Founded by Jason Fernandez, LMSW 
-          and Psychology Professor.
+          The first social work human-centered AI practice. Founded by Jason Fernandez, LMSW and
+          Psychology Professor.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="cta" size="lg" asChild>
@@ -44,9 +42,7 @@ export default function HomePage() {
                 {index + 1}
               </div>
               <h3 className="text-2xl font-serif font-bold text-text mb-3">{step}</h3>
-              <p className="text-muted">
-                Content coming soon.
-              </p>
+              <p className="text-muted">Content coming soon.</p>
             </div>
           ))}
         </div>
@@ -58,8 +54,8 @@ export default function HomePage() {
           Ready to Get Started?
         </h2>
         <p className="text-lg text-muted mb-8 max-w-2xl mx-auto">
-          Explore our services and discover how we can help you navigate the world of AI 
-          with a human-centered approach.
+          Explore our services and discover how we can help you navigate the world of AI with a
+          human-centered approach.
         </p>
         <Button variant="primary" size="lg" asChild>
           <Link href="/pricing">View Pricing</Link>

@@ -25,7 +25,7 @@ export default function PricingCard({
   onCtaClick,
 }: PricingCardProps) {
   return (
-    <Card 
+    <Card
       className={highlighted ? 'ring-2 ring-primary shadow-glow' : ''}
       role="article"
       aria-label={`${name} pricing tier`}
@@ -42,7 +42,7 @@ export default function PricingCard({
         <div className="text-4xl font-bold text-primary mb-2">{price}</div>
         <p className="text-sm text-muted">{description}</p>
       </div>
-      <ul className="space-y-3 mb-8" role="list">
+      <ul className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3">
             <svg

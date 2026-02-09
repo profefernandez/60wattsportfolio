@@ -13,12 +13,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h2 className="text-xl font-serif font-bold text-primary mb-2">
-              {SITE_NAME}
-            </h2>
-            <p className="text-sm text-muted">
-              The first social work human-centered AI practice.
-            </p>
+            <h2 className="text-xl font-serif font-bold text-primary mb-2">{SITE_NAME}</h2>
+            <p className="text-sm text-muted">The first social work human-centered AI practice.</p>
           </div>
 
           {/* Quick Links */}
@@ -26,40 +22,40 @@ export default function Footer() {
             <h3 className="text-lg font-serif font-bold text-text mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  href="/about" 
+                <Link
+                  href="/about"
                   className="text-muted hover:text-primary transition-colors focus:outline-none focus:text-primary"
                 >
                   About
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/portfolio" 
+                <Link
+                  href="/portfolio"
                   className="text-muted hover:text-primary transition-colors focus:outline-none focus:text-primary"
                 >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/blog" 
+                <Link
+                  href="/blog"
                   className="text-muted hover:text-primary transition-colors focus:outline-none focus:text-primary"
                 >
                   Blog
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/pricing" 
+                <Link
+                  href="/pricing"
                   className="text-muted hover:text-primary transition-colors focus:outline-none focus:text-primary"
                 >
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/contact" 
+                <Link
+                  href="/contact"
                   className="text-muted hover:text-primary transition-colors focus:outline-none focus:text-primary"
                 >
                   Contact

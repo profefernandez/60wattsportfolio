@@ -11,12 +11,8 @@ export default function NotFoundPage() {
   return (
     <div className="container-padding mx-auto section-spacing">
       <div className="max-w-2xl mx-auto text-center">
-        <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">
-          404
-        </h1>
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-text mb-4">
-          Page Not Found
-        </h2>
+        <h1 className="text-6xl md:text-7xl font-serif font-bold text-primary mb-6">404</h1>
+        <h2 className="text-3xl md:text-4xl font-serif font-bold text-text mb-4">Page Not Found</h2>
         <p className="text-lg text-muted mb-8">
           The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>

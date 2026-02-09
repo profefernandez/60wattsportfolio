@@ -13,19 +13,11 @@ export interface CaseStudyProps {
  * Case study template component
  * Structured layout for portfolio case studies
  */
-export default function CaseStudy({
-  title,
-  client,
-  date,
-  tags = [],
-  children,
-}: CaseStudyProps) {
+export default function CaseStudy({ title, client, date, tags = [], children }: CaseStudyProps) {
   return (
     <article className="max-w-4xl mx-auto">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
-          {title}
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">{title}</h1>
         <div className="flex flex-wrap gap-4 text-muted text-sm mb-6">
           {client && (
             <div>
@@ -49,9 +41,7 @@ export default function CaseStudy({
           </div>
         )}
       </header>
-      <div className="prose prose-invert prose-lg max-w-none">
-        {children}
-      </div>
+      <div className="prose prose-invert prose-lg max-w-none">{children}</div>
     </article>
   )
 }

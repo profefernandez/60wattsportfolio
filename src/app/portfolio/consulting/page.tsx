@@ -10,9 +10,7 @@ export default function ConsultingPortfolioPage() {
     <div className="container-padding mx-auto section-spacing">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
-            Consulting
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">Consulting</h1>
           <p className="text-xl text-muted">
             Content coming soon. Consulting services and client engagements.
           </p>
@@ -20,9 +18,7 @@ export default function ConsultingPortfolioPage() {
 
         {/* Placeholder for portfolio items */}
         <div className="text-center py-16">
-          <p className="text-lg text-muted">
-            No projects yet. Check back soon!
-          </p>
+          <p className="text-lg text-muted">No projects yet. Check back soon!</p>
         </div>
       </div>
     </div>

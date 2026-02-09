@@ -7,13 +7,11 @@
  */
 export default function AccessibilityPanel() {
   return (
-    <aside 
+    <aside
       className="bg-surface border border-muted rounded-lg p-6"
       aria-label="Accessibility settings"
     >
-      <h2 className="text-xl font-serif font-bold text-text mb-4">
-        Accessibility Settings
-      </h2>
+      <h2 className="text-xl font-serif font-bold text-text mb-4">Accessibility Settings</h2>
       <p className="text-sm text-muted mb-4">
         This site is designed to meet WCAG 2.1 AAA accessibility standards.
       </p>

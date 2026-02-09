@@ -24,13 +24,12 @@ export default async function WebsiteCaseStudyPage({ params }: WebsiteCaseStudyP
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
               Website Project: {slug}
             </h1>
-            <p className="text-muted">
-              Content coming soon.
-            </p>
+            <p className="text-muted">Content coming soon.</p>
           </header>
           <div className="prose prose-invert prose-lg max-w-none">
             <p className="text-muted">
-              This is a placeholder for the website case study with slug: <code className="text-primary">{slug}</code>
+              This is a placeholder for the website case study with slug:{' '}
+              <code className="text-primary">{slug}</code>
             </p>
           </div>
         </article>

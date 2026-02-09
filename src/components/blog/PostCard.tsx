@@ -15,14 +15,7 @@ export interface PostCardProps {
  * Blog post preview card
  * Displays summary information for a blog post
  */
-export default function PostCard({
-  title,
-  slug,
-  date,
-  excerpt,
-  tags = [],
-  author,
-}: PostCardProps) {
+export default function PostCard({ title, slug, date, excerpt, tags = [], author }: PostCardProps) {
   return (
     <Card hover asChild>
       <Link href={`/blog/${slug}`} className="block no-underline">

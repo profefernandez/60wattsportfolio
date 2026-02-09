@@ -13,19 +13,11 @@ export interface PostLayoutProps {
  * Blog post full layout
  * Structured layout for individual blog posts
  */
-export default function PostLayout({
-  title,
-  date,
-  author,
-  tags = [],
-  children,
-}: PostLayoutProps) {
+export default function PostLayout({ title, date, author, tags = [], children }: PostLayoutProps) {
   return (
     <article className="max-w-3xl mx-auto">
       <header className="mb-12">
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">
-          {title}
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-serif font-bold text-text mb-4">{title}</h1>
         <div className="flex flex-wrap gap-4 text-muted text-sm mb-6">
           <div>
             <span className="font-medium text-text">Published:</span>{' '}
@@ -49,9 +41,7 @@ export default function PostLayout({
           </div>
         )}
       </header>
-      <div className="prose prose-invert prose-lg max-w-none">
-        {children}
-      </div>
+      <div className="prose prose-invert prose-lg max-w-none">{children}</div>
     </article>
   )
 }

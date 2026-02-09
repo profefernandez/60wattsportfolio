@@ -11,17 +11,13 @@ export default function Header() {
       <div className="container-padding mx-auto">
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="flex flex-col no-underline hover:no-underline focus:outline-none focus:ring-4 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background rounded-md px-2 py-1"
               aria-label={`${SITE_NAME} - Home`}
             >
-              <span className="text-2xl font-serif font-bold text-primary">
-                {SITE_NAME}
-              </span>
-              <span className="text-sm text-muted">
-                {SITE_TAGLINE}
-              </span>
+              <span className="text-2xl font-serif font-bold text-primary">{SITE_NAME}</span>
+              <span className="text-sm text-muted">{SITE_TAGLINE}</span>
             </Link>
           </div>
           <Nav />
